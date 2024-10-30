@@ -1,0 +1,28 @@
+<h2>Contact</h2>
+<form #form="ngForm" (ngSubmit)="sendMessage()">
+  <div class="form-field">
+    <label for="email">Email</label>
+    <input pInputText
+           type="email"
+           id="email"
+           name="name"
+           [(ngModel)]="email"
+           required>
+  </div>
+  <div class="form-field">
+    <label for="message">Message</label>
+    <textarea pInputTextarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="30"
+              [(ngModel)]="message"
+              required>
+        </textarea>
+  </div>
+  <div class="flex justify-content-between">
+    <p-button type="submit" [disabled]="!form.valid" label="Envoyer" severity="success"/>
+  </div>
+</form>
+
+<p class="success-message">{{ successMessage }}</p>
