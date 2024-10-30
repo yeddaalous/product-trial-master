@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "d20991f5-70e2-4e81-ba3c-9bc5994b5262",
+		"name": "Products Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39385335"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/products/1005",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products/1005"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"id\": 1030,\r\n\t\t\"code\": \"f230fh0mt3\",\r\n\t\t\"name\": \"Test product\",\r\n\t\t\"description\": \"Product Description\",\r\n\t\t\"image\": \"bamboo-watch.jpg\",\r\n\t\t\"price\": 100,\r\n\t\t\"category\": \"Accessories\",\r\n\t\t\"shellId\": 15,\r\n\t\t\"internalReference\": \"REF-123-456\",\r\n\t\t\"inventoryStatus\": \"INSTOCK\",\r\n\t\t\"rating\": 5\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		}
+	]
+}
